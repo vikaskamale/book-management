@@ -9,6 +9,9 @@ export class BookService {
   constructor() { }
 
   addBook(book:Book):Observable<Book>{
+
+   // const err = new Error('test')
+  //  return throwError(()=> err)
     return of(book);
   }
 }
